@@ -1,0 +1,392 @@
+{
+    "timestamp": "2026-10-26 11:30:34",
+    "model_name": "Qwen/Qwen2.5-1.5B-Instruct",
+    "adapter_path": "/home/2800/.ssh/Amazon Reviews/models/absa-qwen-lora/final",
+    "configurations": [
+        {
+            "config_name": "FP16",
+            "weights_size_mb": 3085.28,
+            "actual_vram_usage_mb": 3141.28,
+            "metrics": {
+                "aspect_precision": 0.47467811158798284,
+                "aspect_recall": 0.4018895348837209,
+                "aspect_f1": 0.4352617079889807,
+                "aspect_tp": 553,
+                "aspect_fp": 612,
+                "aspect_fn": 823,
+                "sentiment_accuracy": 0.9441441441441442,
+                "sentiment_macro_f1": 0.7388658249273772,
+                "sentiment_weighted_f1": 0.9445996947335039,
+                "sentiment_samples": 555,
+                "sentiment_labels": [
+                    "mixed",
+                    "negative",
+                    "neutral",
+                    "positive"
+                ],
+                "sentiment_confusion_matrix": [
+                    [
+                        16,
+                        8,
+                        0,
+                        7
+                    ],
+                    [
+                        2,
+                        23,
+                        0,
+                        0
+                    ],
+                    [
+                        1,
+                        0,
+                        1,
+                        0
+                    ],
+                    [
+                        9,
+                        4,
+                        0,
+                        484
+                    ]
+                ],
+                "sentiment_classification_report": {
+                    "mixed": {
+                        "precision": 0.5714285714285714,
+                        "recall": 0.5161290322580645,
+                        "f1-score": 0.5423728813559322,
+                        "support": 31.0
+                    },
+                    "negative": {
+                        "precision": 0.6571428571428571,
+                        "recall": 0.92,
+                        "f1-score": 0.7666666666666667,
+                        "support": 25.0
+                    },
+                    "neutral": {
+                        "precision": 1.0,
+                        "recall": 0.5,
+                        "f1-score": 0.6666666666666666,
+                        "support": 2.0
+                    },
+                    "positive": {
+                        "precision": 0.9857433808553971,
+                        "recall": 0.9738430583501007,
+                        "f1-score": 0.979757085020243,
+                        "support": 497.0
+                    },
+                    "accuracy": 0.9441441441441442,
+                    "macro avg": {
+                        "precision": 0.8035787023567065,
+                        "recall": 0.7274930226520413,
+                        "f1-score": 0.7388658249273772,
+                        "support": 555.0
+                    },
+                    "weighted avg": {
+                        "precision": 0.947851022392774,
+                        "recall": 0.9441441441441442,
+                        "f1-score": 0.9445996947335039,
+                        "support": 555.0
+                    }
+                },
+                "end_to_end_precision": 0.448068669527897,
+                "end_to_end_recall": 0.3793604651162791,
+                "end_to_end_f1": 0.41086186540732,
+                "end_to_end_tp": 522,
+                "end_to_end_fp": 643,
+                "end_to_end_fn": 854,
+                "emb_aspect_precision": 0.5857019810508183,
+                "emb_aspect_recall": 0.4934687953555878,
+                "emb_aspect_f1": 0.5356439543127216,
+                "emb_aspect_tp": 680,
+                "emb_aspect_fp": 481,
+                "emb_aspect_fn": 698,
+                "emb_sentiment_accuracy": 0.9352941176470588,
+                "emb_end_to_end_precision": 0.5478036175710594,
+                "emb_end_to_end_recall": 0.46153846153846156,
+                "emb_end_to_end_f1": 0.5009846396218984,
+                "test_examples": 206,
+                "failed_json_parses": 2,
+                "json_parse_rate": 0.9902912621359223
+            }
+        },
+        {
+            "config_name": "INT8",
+            "weights_size_mb": 1835.78,
+            "actual_vram_usage_mb": 1852.46,
+            "metrics": {
+                "aspect_precision": 0.48482220294882916,
+                "aspect_recall": 0.40625,
+                "aspect_f1": 0.4420719652036378,
+                "aspect_tp": 559,
+                "aspect_fp": 594,
+                "aspect_fn": 817,
+                "sentiment_accuracy": 0.946524064171123,
+                "sentiment_macro_f1": 0.46393594261054166,
+                "sentiment_weighted_f1": 0.9458546875075899,
+                "sentiment_samples": 561,
+                "sentiment_labels": [
+                    "mixed",
+                    "negative",
+                    "neutral",
+                    "optimistic",
+                    "positive"
+                ],
+                "sentiment_confusion_matrix": [
+                    [
+                        14,
+                        8,
+                        0,
+                        0,
+                        5
+                    ],
+                    [
+                        1,
+                        28,
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        1,
+                        1,
+                        0,
+                        1,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        8,
+                        5,
+                        0,
+                        0,
+                        489
+                    ]
+                ],
+                "sentiment_classification_report": {
+                    "mixed": {
+                        "precision": 0.5833333333333334,
+                        "recall": 0.5185185185185185,
+                        "f1-score": 0.5490196078431373,
+                        "support": 27.0
+                    },
+                    "negative": {
+                        "precision": 0.6666666666666666,
+                        "recall": 0.9655172413793104,
+                        "f1-score": 0.7887323943661971,
+                        "support": 29.0
+                    },
+                    "neutral": {
+                        "precision": 0.0,
+                        "recall": 0.0,
+                        "f1-score": 0.0,
+                        "support": 3.0
+                    },
+                    "optimistic": {
+                        "precision": 0.0,
+                        "recall": 0.0,
+                        "f1-score": 0.0,
+                        "support": 0.0
+                    },
+                    "positive": {
+                        "precision": 0.9898785425101214,
+                        "recall": 0.9741035856573705,
+                        "f1-score": 0.9819277108433735,
+                        "support": 502.0
+                    },
+                    "accuracy": 0.946524064171123,
+                    "macro avg": {
+                        "precision": 0.4479757085020243,
+                        "recall": 0.49162786911103995,
+                        "f1-score": 0.46393594261054166,
+                        "support": 561.0
+                    },
+                    "weighted avg": {
+                        "precision": 0.9483108051219505,
+                        "recall": 0.946524064171123,
+                        "f1-score": 0.9458546875075899,
+                        "support": 561.0
+                    }
+                },
+                "end_to_end_precision": 0.4588031222896791,
+                "end_to_end_recall": 0.38444767441860467,
+                "end_to_end_f1": 0.4183471727955714,
+                "end_to_end_tp": 529,
+                "end_to_end_fp": 624,
+                "end_to_end_fn": 847,
+                "emb_aspect_precision": 0.5817391304347826,
+                "emb_aspect_recall": 0.48548621190130625,
+                "emb_aspect_f1": 0.5292721518987342,
+                "emb_aspect_tp": 669,
+                "emb_aspect_fp": 481,
+                "emb_aspect_fn": 709,
+                "emb_sentiment_accuracy": 0.9431988041853513,
+                "emb_end_to_end_precision": 0.548695652173913,
+                "emb_end_to_end_recall": 0.4579100145137881,
+                "emb_end_to_end_f1": 0.4992088607594937,
+                "test_examples": 206,
+                "failed_json_parses": 4,
+                "json_parse_rate": 0.9805825242718447
+            }
+        },
+        {
+            "config_name": "INT4",
+            "weights_size_mb": 1211.03,
+            "actual_vram_usage_mb": 1300.4,
+            "metrics": {
+                "aspect_precision": 0.5154471544715448,
+                "aspect_recall": 0.46075581395348836,
+                "aspect_f1": 0.4865694551036071,
+                "aspect_tp": 634,
+                "aspect_fp": 596,
+                "aspect_fn": 742,
+                "sentiment_accuracy": 0.9433962264150944,
+                "sentiment_macro_f1": 0.8443849882121228,
+                "sentiment_weighted_f1": 0.9453147720915503,
+                "sentiment_samples": 636,
+                "sentiment_labels": [
+                    "mixed",
+                    "negative",
+                    "neutral",
+                    "positive"
+                ],
+                "sentiment_confusion_matrix": [
+                    [
+                        20,
+                        7,
+                        0,
+                        8
+                    ],
+                    [
+                        3,
+                        37,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        2,
+                        0
+                    ],
+                    [
+                        16,
+                        2,
+                        0,
+                        541
+                    ]
+                ],
+                "sentiment_classification_report": {
+                    "mixed": {
+                        "precision": 0.5128205128205128,
+                        "recall": 0.5714285714285714,
+                        "f1-score": 0.5405405405405406,
+                        "support": 35.0
+                    },
+                    "negative": {
+                        "precision": 0.8043478260869565,
+                        "recall": 0.925,
+                        "f1-score": 0.8604651162790697,
+                        "support": 40.0
+                    },
+                    "neutral": {
+                        "precision": 1.0,
+                        "recall": 1.0,
+                        "f1-score": 1.0,
+                        "support": 2.0
+                    },
+                    "positive": {
+                        "precision": 0.9854280510018215,
+                        "recall": 0.9677996422182469,
+                        "f1-score": 0.9765342960288809,
+                        "support": 559.0
+                    },
+                    "accuracy": 0.9433962264150944,
+                    "macro avg": {
+                        "precision": 0.8256490974773227,
+                        "recall": 0.8660570534117046,
+                        "f1-score": 0.8443849882121228,
+                        "support": 636.0
+                    },
+                    "weighted avg": {
+                        "precision": 0.9480769048776958,
+                        "recall": 0.9433962264150944,
+                        "f1-score": 0.9453147720915503,
+                        "support": 636.0
+                    }
+                },
+                "end_to_end_precision": 0.48578391551584077,
+                "end_to_end_recall": 0.43459302325581395,
+                "end_to_end_f1": 0.45876486382815496,
+                "end_to_end_tp": 598,
+                "end_to_end_fp": 633,
+                "end_to_end_fn": 778,
+                "emb_aspect_precision": 0.6001628664495114,
+                "emb_aspect_recall": 0.534833091436865,
+                "emb_aspect_f1": 0.5656178050652341,
+                "emb_aspect_tp": 737,
+                "emb_aspect_fp": 491,
+                "emb_aspect_fn": 641,
+                "emb_sentiment_accuracy": 0.9308005427408412,
+                "emb_end_to_end_precision": 0.5586319218241043,
+                "emb_end_to_end_recall": 0.49782293178519593,
+                "emb_end_to_end_f1": 0.5264773599386033,
+                "test_examples": 206,
+                "failed_json_parses": 0,
+                "json_parse_rate": 1.0
+            }
+        }
+    ]
+}
+
+// [*] Đang chạy đánh giá Accuracy/ABSA metrics cho config FP16...
+// Đã lưu kết quả prediction sau khi gom nhóm vào file: evaluated_predictions_merged.json
+// [FP16] Kết quả đo lường:
+//   - Weights size       : 3085.28 MB
+//   - Actual VRAM usage  : 3141.28 MB
+//   - Aspect Recall (Strict) : 0.4019
+//   - Aspect Precision (Strict) : 0.4747
+//   - Aspect Recall (Embedding) : 0.4935
+//   - Aspect Precision (Embedding) : 0.5857
+//   - End-to-End F1      : 0.4109
+//   - JSON Parse Rate    : 0.9903
+
+// --------------------------------------------------
+// Benchmarking Quantization Config: INT8
+// --------------------------------------------------
+// /home/2800/.conda/envs/my_env/lib/python3.10/site-packages/peft/config.py:220: UserWarning: Unexpected keyword arguments ['kasa_config', 'lora_ga_config', 'monteclora_config', 'use_bdlora', 'velora_config'] for class LoraConfig, these are ignored. This probably means that you're loading a configuration file that was saved using a higher version of the library and additional parameters have been introduced since. It is highly recommended to upgrade the PEFT version before continuing (e.g. by running `pip install -U peft`).
+//   warnings.warn(
+// [*] Đang chạy đánh giá Accuracy/ABSA metrics cho config INT8...
+// Đã lưu kết quả prediction sau khi gom nhóm vào file: evaluated_predictions_merged.json
+// [INT8] Kết quả đo lường:
+//   - Weights size       : 1835.78 MB
+//   - Actual VRAM usage  : 1852.46 MB
+//   - Aspect Recall (Strict) : 0.4062
+//   - Aspect Precision (Strict) : 0.4848
+//   - Aspect Recall (Embedding) : 0.4855
+//   - Aspect Precision (Embedding) : 0.5817
+//   - End-to-End F1      : 0.4183
+//   - JSON Parse Rate    : 0.9806
+
+// --------------------------------------------------
+// Benchmarking Quantization Config: INT4
+// --------------------------------------------------
+// /home/2800/.conda/envs/my_env/lib/python3.10/site-packages/peft/config.py:220: UserWarning: Unexpected keyword arguments ['kasa_config', 'lora_ga_config', 'monteclora_config', 'use_bdlora', 'velora_config'] for class LoraConfig, these are ignored. This probably means that you're loading a configuration file that was saved using a higher version of the library and additional parameters have been introduced since. It is highly recommended to upgrade the PEFT version before continuing (e.g. by running `pip install -U peft`).
+//   warnings.warn(
+// [*] Đang chạy đánh giá Accuracy/ABSA metrics cho config INT4...
+// Đã lưu kết quả prediction sau khi gom nhóm vào file: evaluated_predictions_merged.json
+// [INT4] Kết quả đo lường:
+//   - Weights size       : 1211.03 MB
+//   - Actual VRAM usage  : 1300.40 MB
+//   - Aspect Recall (Strict) : 0.4608
+//   - Aspect Precision (Strict) : 0.5154
+//   - Aspect Recall (Embedding) : 0.5348
+//   - Aspect Precision (Embedding) : 0.6002
+//   - End-to-End F1      : 0.4588
+//   - JSON Parse Rate    : 1.0000

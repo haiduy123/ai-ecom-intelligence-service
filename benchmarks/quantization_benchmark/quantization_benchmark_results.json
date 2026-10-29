@@ -1,0 +1,21 @@
+{
+    "timestamp": "2026-10-26 07:53:43",
+    "model_name": "Qwen/Qwen2.5-1.5B-Instruct",
+    "configurations": [
+        {
+            "config_name": "FP16",
+            "weights_size_mb": 3085.28,
+            "actual_vram_usage_mb": 3141.28
+        },
+        {
+            "config_name": "INT8",
+            "weights_size_mb": 1835.78,
+            "actual_vram_usage_mb": 1850.39
+        },
+        {
+            "config_name": "INT4",
+            "weights_size_mb": 1211.03,
+            "actual_vram_usage_mb": 1300.59
+        }
+    ]
+}
